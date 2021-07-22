@@ -24,7 +24,7 @@ pip install .
 
 ````{tab} Developer
 ```bash
-pip install -e .[tests,docs]
+pip install -e .[tests,lint_type_checks,docs]
 ```
 ````
 
