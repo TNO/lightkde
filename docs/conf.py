@@ -54,6 +54,8 @@ autodoc_typehints = "description"
 # installed for the doc build) TODO: this list could be built automatically
 autodoc_mock_imports = [
     "numpy",
+    "matplotlib",
+    "scipy",
 ]
 
 # If true, the current module name will be prepended to all description
