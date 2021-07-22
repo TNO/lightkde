@@ -47,7 +47,6 @@ jobs:
           pip install .[tests]
       - name: Test with pytest
         run: |
-          coverage run -m pytest && coverage report -m
           # grab the coverage output and also print it to the sreen
           COVERAGE_REPORT=$(coverage run -m pytest && coverage report -m | \
             tee /dev/stderr)
