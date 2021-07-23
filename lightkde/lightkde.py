@@ -68,8 +68,8 @@ def kde_1d(
             A vector of sample points from which the density estimate is constructed.
         n_x_vec:
             The number of ``x_vec`` points used in the uniform discretization of
-            the interval ``[x_min, x_max]`` ``n_x_vec`` has to be a power of two if
-            ``n_x_vec`` is not a power of two, then ``n_x_vec```` is rounded up to the
+            the interval ``[x_min, x_max]``. ``n_x_vec`` has to be a power of two. If
+            ``n_x_vec`` is not a power of two, then ``n_x_vec`` is rounded up to the
             next power of two, i.e., ``n_x_vec`` is set to
             ``n_x_vec=2**ceil(log2(n_x_vec))``; the default value of ``n_x_vec`` is
             ``n_x_vec=2**14``.
@@ -89,10 +89,10 @@ def kde_1d(
             Should the used bandwidth be returned?
 
     Raises:
-        ValueError: if ``weight_vec`` has at least one negative value.
+        ValueError: If ``weight_vec`` has at least one negative value.
 
     Warns:
-        Root finding (Brent's method) failed...: optimal bandwidth finding failed,
+        Root finding failed (Brent's method): Optimal bandwidth finding failed,
             falling back to the rule-of-thumb bandwidth of ``scipy.stats.gaussian_kde``.
 
     Returns:
@@ -102,8 +102,8 @@ def kde_1d(
         Kernel density grid (``x_vec``), a vector of grid points over which
         the kernel density estimate is computed.
 
-        Optimal bandwidth (Gaussian kernel assumed), if ``return_bandwidth`` is
-        ``True``.
+        Optimal bandwidth (Gaussian kernel assumed), returned only if
+        ``return_bandwidth`` is ``True``.
 
 
     Examples:
@@ -275,7 +275,7 @@ def kde_2d(
         n_row_mx:
             Number of points along each dimension (same for columns) where the
             estimate of the density will be returned, i.e. total number of points is
-            n_row_x_mx**2.
+            ``n_row_x_mx**2``.
         xy_min:
             The lower x and y boundaries of the interval over which the density
             estimate is constructed.
@@ -309,8 +309,8 @@ def kde_2d(
         over which the density estimate is computed in the form of a 2D matrix
         that is the outcome of ``np.meshgrid``.
 
-        Optimal bandwidth (Gaussian kernel assumed), if ``return_bandwidth`` is
-        ``True``.
+        Optimal bandwidth (Gaussian kernel assumed), returned only if
+        ``return_bandwidth`` is ``True``.
 
     .. note::
         To ease testing and debugging the implementation very closely follows [2],
