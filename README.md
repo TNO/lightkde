@@ -1,10 +1,12 @@
 # lightkde
 
-[![Documentation Status](https://readthedocs.org/projects/lightkde/badge/?version=stable)](https://lightkde.readthedocs.io/en/stable)
+[![Documentation Status](https://readthedocs.org/projects/lightkde/badge/?version=stable)](https://lightkde.readthedocs.io/en/stable/)
 [![Continuous integration](https://github.com/rozsasarpi/lightkde/actions/workflows/push.yaml/badge.svg)](https://github.com/rozsasarpi/lightkde/actions)
 [![PyPI version](https://img.shields.io/pypi/v/lightkde)](https://pypi.org/project/lightkde/)
-[![coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/rozsasarpi/da9e3419b54a0daf6fe07b934f37f837/raw/lightkde_main_coverage.json)](https://en.wikipedia.org/wiki/Code_coverage)
+![python versions](https://img.shields.io/pypi/pyversions/lightkde)
+[![coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/rozsasarpi/bafe6e5b1382e4c2c49156a01e4803f3/raw/lightkde_main_coverage.json)](https://en.wikipedia.org/wiki/Code_coverage)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/rozsasarpi/lightkde.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/rozsasarpi/lightkde/context:python)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/rozsasarpi/lightkde.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/rozsasarpi/lightkde/alerts/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 
