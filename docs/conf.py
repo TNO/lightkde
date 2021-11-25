@@ -25,7 +25,7 @@ now = datetime.datetime.now()
 # -- Project information -----------------------------------------------------
 
 project = "lightkde"
-copyright = f"{now.year}, Arpad Rozsas"
+copyright = f"{now.year}, TNO"
 author = "Arpad Rozsas"
 
 # The full version, including alpha/beta/rc tags

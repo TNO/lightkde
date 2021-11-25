@@ -94,7 +94,7 @@ jobs:
   release:
     name: Semantic Release
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.repository == 'rozsasarpi/lightkde'
+    if: github.ref == 'refs/heads/main' && github.repository == 'TNO/lightkde'
     concurrency: release
     needs: [ lint_and_type_check, test ]
 

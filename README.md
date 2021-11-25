@@ -1,7 +1,7 @@
 # lightkde
 
 [![Documentation Status](https://readthedocs.org/projects/lightkde/badge/?version=stable)](https://lightkde.readthedocs.io/en/stable/)
-[![Continuous integration](https://github.com/rozsasarpi/lightkde/actions/workflows/push.yaml/badge.svg)](https://github.com/rozsasarpi/lightkde/actions)
+[![Continuous integration](https://github.com/TNO/lightkde/actions/workflows/push.yaml/badge.svg)](https://github.com/TNO/lightkde/actions)
 [![PyPI version](https://img.shields.io/pypi/v/lightkde)](https://pypi.org/project/lightkde/)
 ![python versions](https://img.shields.io/pypi/pyversions/lightkde)
 [![coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/rozsasarpi/bafe6e5b1382e4c2c49156a01e4803f3/raw/lightkde_main_coverage.json)](https://en.wikipedia.org/wiki/Code_coverage)
