@@ -6,7 +6,7 @@
 All contributions are welcome, feel free to make a pull
 request on [GitHub][github_repository].
 
-[github_repository]: https://github.com/rozsasarpi/lightkde
+[github_repository]: https://github.com/TNO/lightkde
 
 * Semantic versioning and automatic release using
   [python-semantic-release](https://github.com/relekang/python-semantic-release).

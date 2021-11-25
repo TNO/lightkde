@@ -28,4 +28,4 @@ pip install -e .[tests,lint_type_checks,docs]
 ```
 ````
 
-[repository]: https://github.com/rozsasarpi/lightkde
+[repository]: https://github.com/TNO/lightkde
