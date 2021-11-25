@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.2 (2021-11-25)
+### Fix
+* Transfer to TNO on GitHub ([`b2ee7b7`](https://github.com/TNO/lightkde/commit/b2ee7b760beb800a99394a28d550053024c49845))
+
 ## v1.0.1 (2021-11-22)
 ### Fix
 * **docs:** Resolve dependency conflict between furo and sphinx ([`1320719`](https://github.com/TNO/lightkde/commit/1320719a31e3f33bcb889d923f65c50dc0f0b9cf))
