@@ -43,7 +43,7 @@ def test_kde_1d_gaussian_mixture_against_matlab():
         )
     )
 
-    density_vec, x_vec = kde_1d(sample_vec=sample, n_x_vec=2 ** 14, x_min=-15, x_max=15)
+    density_vec, x_vec = kde_1d(sample_vec=sample, n_x_vec=2**14, x_min=-15, x_max=15)
 
     np.testing.assert_allclose(x_vec, expected_x_vec, atol=1e-3)
     np.testing.assert_allclose(density_vec, expected_density_vec, atol=5e-3)
@@ -97,10 +97,10 @@ def test_kde_1d_gaussian_with_weights_against_scipy():
     sample = np.sort(sample)
 
     density_vec, x_vec = kde_1d(
-        sample_vec=sample, n_x_vec=2 ** 14, x_min=-5, x_max=5, weight_vec=weights
+        sample_vec=sample, n_x_vec=2**14, x_min=-5, x_max=5, weight_vec=weights
     )
     density_vec_nw, x_vec_nw = kde_1d(
-        sample_vec=sample, n_x_vec=2 ** 14, x_min=-5, x_max=5
+        sample_vec=sample, n_x_vec=2**14, x_min=-5, x_max=5
     )
     # scipy
     gkde = gaussian_kde(dataset=sample, weights=weights)
