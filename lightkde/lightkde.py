@@ -30,8 +30,8 @@ import numpy as np
 from scipy import fft, optimize
 from scipy.stats import gaussian_kde
 
-N_X_VEC = int(2 ** 14)
-N_ROW_MX = int(2 ** 8)
+N_X_VEC = int(2**14)
+N_ROW_MX = int(2**8)
 
 
 # ======================================================================================
@@ -206,7 +206,7 @@ def kde_1d(
 
     # Smooth the DCTransformed sample_vec using t_star
     sm_dct_sample = dct_sample * np.exp(
-        -np.arange(n_x_vec) ** 2 * np.pi ** 2 * t_star / 2
+        -np.arange(n_x_vec) ** 2 * np.pi**2 * t_star / 2
     )
     # Inverse DCT to get density
     density_vec = fft.idct(sm_dct_sample, norm=None) / x_range
@@ -229,7 +229,7 @@ def fixed_point(t, n_sample, ic, sq_dct_sample):
     f = (
         2
         * np.pi ** (2 * c7)
-        * np.sum(ic ** c7 * sq_dct_sample * np.exp(-ic * np.pi ** 2 * t))
+        * np.sum(ic**c7 * sq_dct_sample * np.exp(-ic * np.pi**2 * t))
     )
     for s in range(c7, 1, -1):
         k0 = np.prod(range(1, 2 * s, 2)) / np.sqrt(2 * np.pi)
@@ -238,7 +238,7 @@ def fixed_point(t, n_sample, ic, sq_dct_sample):
         f = (
             2
             * np.pi ** (2 * s)
-            * np.sum(ic ** s * sq_dct_sample * np.exp(-ic * np.pi ** 2 * time))
+            * np.sum(ic**s * sq_dct_sample * np.exp(-ic * np.pi**2 * time))
         )
     return t - (2 * n_sample * np.sqrt(np.pi) * f) ** (-2 / 5)
 
@@ -365,7 +365,7 @@ def kde_2d(
 
     # compute the optimal bandwidth**2
     ic = np.arange(start=0, stop=n_row_mx, step=1, dtype=float) ** 2
-    ac2 = a ** 2
+    ac2 = a**2
     t_star = root(
         lambda t: t - evolve(t, n_sample=n_sample, ic=ic, ac2=ac2)[0], n=n_sample
     )
@@ -387,8 +387,8 @@ def kde_2d(
 
     # smooth the discrete cosine transform of initial sample_vec using t_star
     n_range = np.arange(0, n_row_mx, dtype=float)
-    v1 = np.atleast_2d(np.exp(-(n_range ** 2) * np.pi ** 2 * t_x / 2)).T
-    v2 = np.atleast_2d(np.exp(-(n_range ** 2) * np.pi ** 2 * t_y / 2))
+    v1 = np.atleast_2d(np.exp(-(n_range**2) * np.pi**2 * t_x / 2)).T
+    v2 = np.atleast_2d(np.exp(-(n_range**2) * np.pi**2 * t_y / 2))
     a_t = np.matmul(v1, v2) * a
 
     # apply the inverse discrete cosine transform
@@ -437,7 +437,7 @@ def func(s, t, n_sample, ic, ac2):
 
 def psi(s, time, ic, ac2):
     # s is a vector
-    w = np.exp(-ic * np.pi ** 2 * time) * np.append(1, 0.5 * np.ones(len(ic) - 1))
+    w = np.exp(-ic * np.pi**2 * time) * np.append(1, 0.5 * np.ones(len(ic) - 1))
     wx = w * (ic ** s[0])
     wy = w * (ic ** s[1])
     out = (
@@ -501,7 +501,7 @@ def root(fun, n):
     max_tol = 0.1
     n = 50 * int(n <= 50) + 1050 * int(n >= 1050) + n * int((n < 1050) & (n > 50))
     # pwith the current numbers this is at maximum 0.01
-    tol = 10 ** -12 + 0.01 * (n - 50) / 1000
+    tol = 10**-12 + 0.01 * (n - 50) / 1000
 
     solved = False
     while not solved:

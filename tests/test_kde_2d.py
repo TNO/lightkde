@@ -130,7 +130,7 @@ def test_kde_2d_gaussian_mixture_against_matlab():
     )
 
     density_mx, x_mx, y_mx = kde_2d(
-        sample_mx=sample, n_row_mx=2 ** 8, xy_min=[-10, -5], xy_max=[10, 5]
+        sample_mx=sample, n_row_mx=2**8, xy_min=[-10, -5], xy_max=[10, 5]
     )
 
     np.testing.assert_allclose(x_mx, expected_x_mx, atol=1e-3)
@@ -163,7 +163,7 @@ def test_kde_2d_sinusoidal_against_matlab():
     )
 
     density_mx, x_mx, y_mx = kde_2d(
-        sample_mx=sample, n_row_mx=2 ** 8, xy_min=[0, -2], xy_max=[1, 2]
+        sample_mx=sample, n_row_mx=2**8, xy_min=[0, -2], xy_max=[1, 2]
     )
 
     np.testing.assert_allclose(x_mx, expected_x_mx, atol=1e-3)
