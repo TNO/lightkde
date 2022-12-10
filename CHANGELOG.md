@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.3 (2022-12-10)
+### Fix
+* **build:** Update supported python versions ([`2f14eb1`](https://github.com/TNO/lightkde/commit/2f14eb1e8a1c3460c31558893e844c8d835b668a))
+
 ## v1.0.2 (2021-11-25)
 ### Fix
 * Transfer to TNO on GitHub ([`b2ee7b7`](https://github.com/TNO/lightkde/commit/b2ee7b760beb800a99394a28d550053024c49845))
