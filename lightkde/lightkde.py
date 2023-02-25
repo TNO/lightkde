@@ -24,7 +24,7 @@ TODO:
 
 import copy
 import logging
-from typing import Iterable, Tuple, Union
+from typing import Iterable, Optional, Tuple, Union
 
 import numpy as np
 from scipy import fft, optimize
@@ -40,8 +40,8 @@ N_ROW_MX = int(2**8)
 def kde_1d(
     sample_vec: Union[np.ndarray, list],
     n_x_vec: int = N_X_VEC,
-    x_min: Union[int, float] = None,
-    x_max: Union[int, float] = None,
+    x_min: Optional[Union[int, float]] = None,
+    x_max: Optional[Union[int, float]] = None,
     weight_vec: Union[np.ndarray, list] = None,
     return_bandwidth: bool = False,
 ) -> Union[Tuple[np.ndarray, np.ndarray], Tuple[np.ndarray, np.ndarray, float]]:
