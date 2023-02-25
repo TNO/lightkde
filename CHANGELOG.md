@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.4 (2023-02-25)
+### Fix
+* Comply with latest mypy and update hooks ([`f9f4212`](https://github.com/TNO/lightkde/commit/f9f4212d69080169d84b95ae30227606244f6c88))
+
 ## v1.0.3 (2022-12-10)
 ### Fix
 * **build:** Update supported python versions ([`2f14eb1`](https://github.com/TNO/lightkde/commit/2f14eb1e8a1c3460c31558893e844c8d835b668a))

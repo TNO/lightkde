@@ -2,7 +2,7 @@
 # semantic release package: ````python-semantic-release````. If you need to indicate the
 # version somewhere, e.g. documentation, then import it from here.
 
-__version__ = "1.0.3"
+__version__ = "1.0.4"
 
 # for convenience
 from lightkde.lightkde import kde_1d, kde_2d
